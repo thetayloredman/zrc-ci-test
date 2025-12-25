@@ -158,11 +158,10 @@ jobs:
                       - **macOS ARM64**: \`zrc-macOS-ARM64-release\`
                       - **macOS x64**: \`zrc-macOS-X64-release\`
 
-                      Each artifact contains:
-                      - \`bin/zrc\` - The Zirco compiler
-                      - \`bin/zircop\` - The Zirco linter
-                      - \`include/\` - C header files
-                      - \`libzr/\` - Standard library files`;
+                      If you use the [Zircon toolchain manager](https://github.com/zirco-lang/zircon), you can easily install the built artifacts using these downloaded packages:
+                      \`\`\`bash
+                      zircon import ./zrc-Linux-X64-release.zip
+                      \`\`\``;
 
                       // Find existing comment
                       const comments = await github.rest.issues.listComments({
